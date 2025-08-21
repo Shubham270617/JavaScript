@@ -26,3 +26,32 @@ console.log(booleanIsLoggedIn) // true
 // "33" => 33
 // "33abc"=> NaN
 // true=> 1; false => 0
+
+
+// ################ Operations ################
+
+let value = 3
+let negValue = -value
+console.log(negValue) //-3
+
+let str1 = "hello"
+let str2 = " Shubham"
+let str3 = str1+str2
+console.log(str3) //hello Shubham
+
+console.log("1"+2) //12
+console.log(1+"2") //12
+console.log("1" + 2 + 2) //122
+console.log(1 + 2 + "2") //32
+
+// If the string comes first, everything becomes a string afterwards.
+// If the string comes last, earlier additions may stay numeric before coercion.
+
+// tricky conversion
+
+console.log(+true) //1 this is because you have incremented the value here.
+console.log(+"")//0 
+
+let gameCounter = 100
+gameCounter++
+console.log(gameCounter) //101
