@@ -73,3 +73,4 @@ console.log(null >= 0) // true
 
 // the reason is that a ewquality check == and comparison > < >= <= work differently.
 // Comparisons convert null to a number, treating it as 0. That's wjy (3) null>= 0 is true and (1) null>0 is false. 
+// === it is strict check it means that it ot only check the datatype but also typeof data
