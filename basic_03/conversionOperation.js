@@ -39,7 +39,7 @@ let str2 = " Shubham"
 let str3 = str1+str2
 console.log(str3) //hello Shubham
 
-console.log("1"+2) //12
+console.log("1"+2) //12  
 console.log(1+"2") //12
 console.log("1" + 2 + 2) //122
 console.log(1 + 2 + "2") //32
@@ -55,3 +55,21 @@ console.log(+"")//0
 let gameCounter = 100
 gameCounter++
 console.log(gameCounter) //101
+
+
+// Comparison 
+// console.log(2>1); 
+// console.log(2>=1); 
+// console.log(2<1); 
+// console.log(2==1); 
+// console.log(2!=1); 
+
+console.log("2" > 1) // true here true is coming becuase JS has changed into number automatically
+console.log("02" > 1) // true
+
+console.log(null > 0) // false because null is empty value
+console.log(null == 0) // false 
+console.log(null >= 0) // true
+
+// the reason is that a ewquality check == and comparison > < >= <= work differently.
+// Comparisons convert null to a number, treating it as 0. That's wjy (3) null>= 0 is true and (1) null>0 is false. 
