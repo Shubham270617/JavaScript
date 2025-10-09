@@ -6,7 +6,7 @@
 // we can change the number into string by the process of like this 
 
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(2)); // this will put . after the number and put 00 mainly used in the ecommerce website.
+// console.log(balance.toFixed(2)); // this will put . after the number and put 00 mainly used in the ecommerce website we can use any number here it will depend upon the data what we have to represent .
 
 // toPrecision it means that it will round off the value completely nd change the value 
 
