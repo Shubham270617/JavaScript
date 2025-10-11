@@ -18,6 +18,6 @@ myArr.pop() // it is simple that it will remove the last part of the array
 console.log(myArr);
 
 myArr.unshift(8)
-console.log(myArr);
+console.log(myArr); // in this add the array in front of the array box
 
 
