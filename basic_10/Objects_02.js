@@ -54,3 +54,16 @@ users[1].email
 
 console.log(Object.keys(tinUser)); // User has taken all the keys and kleep in the array so that it is easy to noted.
 console.log(Object.values(tinUser)); // User has taken all the values and keep in the array so that it is easy to noted.
+
+
+ const teacher = {
+    teacherName: "Maths",
+    Price: "2000",
+    teacherInst: "Shubham"
+ }
+
+ const {teacherInst: inst} = teacher //this is called as destructring the object
+ console.log(inst); 
+ 
+
+ //JSON is having string and the value is also string so both of them are string
