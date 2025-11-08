@@ -24,4 +24,20 @@ function one(){
 
     two()
 }
-one()
+one() 
+
+
+//++++++++++++++++++++ interseting +++++++++++++++++
+
+example(5)
+function example(value){
+    return value + 1
+}
+
+
+example2(5)
+const example2 = function(num){
+ return num + 2
+}
+
+//Lets see the both the example you will find that in the first example there will be no error because in that we have declared the function directly but in second part we will be getting an error because we have declared it but we have stored in the variable.
