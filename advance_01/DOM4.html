@@ -1,0 +1,54 @@
+<!-- How to add language using the simple function using createElement  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM4 Elements</title>
+</head>
+<body style="background-color: bisque; color: #000;">
+    <!-- Parent -->
+    <ul class="language"> 
+        <!-- Child -->
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage('Python AI')
+    addLanguage('Java')
+
+    //Optimise way
+
+    function addOpt(langName){
+     const li = document.createElement('li')
+     li.appendChild(document.createTextNode(langName))
+     document.querySelector('.language').appendChild(li)
+    }
+
+    addOpt('C++')
+
+    //Edit 
+    const secondLang = document.querySelector("li:nth-child(3)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "C"
+    secondLang.replaceWith(newLi)
+
+    // edit replace java with graph ql
+
+    const secondLangs = document.querySelector("li:first-child")
+    const newwli = document.createElement('li')
+    newwli.textContent = "Graph QL"
+    secondLangs.replaceWith(newwli)
+
+    //remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>

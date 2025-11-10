@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM3 Element</title>
+</head>
+<body style="background-color: bisque; color: #000;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div) // we are creating a div here 
+
+    //now adding the property in the div
+    div.className= "main"
+    div.id = Math.round(Math.random() * 10 + 1) // here the math library is mainly for when the data is being multiplied by 10 random id is generated and then 1 is added because it value not be zero 
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+    // div.innerHTML = "Simple Option"
+
+    //adding text to the div 
+const addText = document.createTextNode("Simple Option")
+div.appendChild(addText) //this will amke a div and add the text i the div whih can be visible to the browser
+
+document.body.appendChild(div)
+</script>
+</html>
