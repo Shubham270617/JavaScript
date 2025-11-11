@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Only JS Code</title>
+  </head>
+  <body></body>
+  <script>
+    const butt = document.querySelector(".button"); //selected all the button
+    const body = document.querySelector("body"); //selected the whole body
+    // as soon as the node list we get we are able to put forEach loop
+    butt.array.forEach(function (button) {
+      button.addEventListener("click", function (e) {
+        // now we have put down event listner because we have to add events so that we can easily find out how this will work.
+        console.log(e); //event
+        console.log(e.target); //this means from which side of the target the event has arrived
+        switch (e.target.id) {
+          case "yellow":
+            body.style.backgroundColor = "yellow";
+            break;
+
+          case "red":
+            body.style.backgroundColor = "red";
+            break;
+
+          case "blue":
+            body.style.backgroundColor = "blue";
+            break;
+
+          case "green":
+            body.style.backgroundColor = "green";
+            break;
+
+          default:
+            body.style.backgroundColor = "white"; // fallback color
+            break;
+        }
+      });
+    });
+  </script>
+</html>
