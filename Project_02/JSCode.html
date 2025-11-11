@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator JS Logic only</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const form = document.querySelector('form') // here we have selected the complete form 
+    form.addEventListener('submit', function(e){
+        e.preventDefault()
+
+        const height = parseInt(document.querySelector('#height').value) //so here the value will be in the string value now to change into the int value we will pass it as parseInt
+        const weight = parseInt(document.querySelector('#weight').value)
+        const results = document.querySelector('#result')
+
+        if (height === '' || height<0 || isNaN(height)) { // the value is different
+            results.innerHTML = `Please give a valid height ${height}`
+        }else if (weight === '' || weight<0 || isNaN(weight)) { // the value is different
+            results.innerHTML = `Please give a valid weight ${weight}`
+        } else {
+            const BMI = (weight / ((height*height)/10000)).toFixed(2) // bmi calculated
+            //show result
+            result.innerHTML = `<span>${BMI}</span>`
+        }
+
+
+    })
+</script>
+</html>
