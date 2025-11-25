@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // API is just like a talking language between the frontend or backend it must be o any language it is mainly for making a connectivity
+    const requestURL = 'https://jsonplaceholder.typicode.com/todos/1'
+    new obj = XMLHttpRequest()
+    obj.open('GET', requestURL)
+    obj.onreadystatechange = function(){
+        console.log(obj.readyState);
+        if (obj.readyState === 4) {
+            console.log(this.responseText)
+        }
+    }
+    obj.send()
+
+    //onreadystatechange takes the function 
+    //parse convert the JSOON dat into string 
+</script>
+</html>

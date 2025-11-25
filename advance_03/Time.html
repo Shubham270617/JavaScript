@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync and async</title>
+</head>
+<body>
+    <h1>Sinha Application</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    // const sayShubham = function(){
+    //     console.log("Shubham Sinha");
+        
+    // }
+    // const says = function(){
+    //     document.querySelector('h1').innerHTML = "Best Application"
+    // }
+    // const change = setTimeout(sayShubham, 2000) 
+    // const cme = setTimeout(says, 2000)
+    
+    // document.querySelector("#stop").addEventListener('click', function(){
+    //     clearTimeout(change)
+    //     clearTimeout(cme)
+    // })
+
+    // clearTime out is always put on the event side
+    // this function mainly have that it will execute but when it will execute when the 2 second is over as soon a 2 second over the function is called "Shubham Sinha"
+
+    // setInterval is that function which need a break for the time which we provide after that the function which is already in interval wull execute and execute 
+    
+
+    //setInterval
+
+    const sayDate = function(str){
+        console.log(str, Date.now())
+    }
+    const intervalId = (sayDate, 1000, "Sinha")
+
+    clearInterval(intervalId)
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener </title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Events are mainly invoke on the activity which we do 
+    
+    // document.getElementById('owl').onclick =function(){
+    //     alert('Clicked OWL')
+    // } bad approch
+// type, timestamp, defaultPrevent(any default behavior of application can be stopped)
+    // target , to Element, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+
+    // attached event listener 
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        
+    },false) // yu hve to mention on which event yo are currently working on here e is called event objects and fasle/true is called event propgation
+
+    // event bubbling it is the process in which the inner function will execute first and then the outer eleement will do so inside--out
+    
+    //event capturing -- it is the method in which the outterfunction will run and then the inner function outside--in // top to bottom
+
+    // to stop the event bubbling we just need to put down the e.stopPropogation() this means that when we click o inner element then it will not go to the outer element.
+
+
+    //e.preventDefault -- let we have a link called when we click on the link we are taken to the google website we dont want that this happen so we will put down the e.preventDefault() so what it will do 
+    
+    // e.target --- here we want to target something
+    // e.target.parentNode -- here we are targeting the parent 
+    // removeIt.remove()
+
+    document.querySelector('#image').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName==='IMG') {
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    })
+</script>
+</html>
